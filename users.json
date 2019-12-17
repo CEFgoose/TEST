@@ -1,0 +1,140 @@
+{
+   "USERS": [
+      {
+         "comment": "Project Lead",
+         "name": "Leanne",
+         "username": "LSkalayo",
+         "uid": "7445887"
+      },
+      {
+         "name": "Alex",
+         "username": "Soccersweeper",
+         "uid": "9498478"
+      },
+      {
+         "name": "Anthony",
+         "username": "acrague",
+         "uid": "10128204"
+      },
+      {
+         "name": "Arlene",
+         "username": "ArleneC",
+         "uid": "9355928"
+      },
+      {
+         "name": "Breia",
+         "username": "3agleOne",
+         "uid": "9550075"
+      },
+      {
+         "name": "Brian",
+         "username": "Unicorn Ostrich",
+         "uid": "9319448"
+      },
+      {
+         "name": "Chris",
+         "username": "Goose6thAB",
+         "uid": "10082622"
+      },
+      {
+         "name": "Ethan",
+         "username": "Ethan",
+         "uid": "10139455"
+      },
+      {
+         "name": "Ian",
+         "username": "Ikohl",
+         "uid": "10140113"
+      },
+      {
+         "name": "Jacinda",
+         "username": "Cinderblock",
+         "uid": "9564205"
+      },
+      {
+         "name": "Johnny",
+         "username": "spititout",
+         "uid": "10140140"
+      },
+      {
+         "name": "Logan",
+         "username": "Dalekokarta",
+         "uid": "9633078"
+      },
+      {
+         "name": "Louis",
+         "username": "BlueRanger",
+         "uid": "9467992"
+      },
+      {
+         "name": "Marshall",
+         "username": "MTG5093",
+         "uid": "9220580"
+      },
+      {
+         "name": "Matthew",
+         "username": "MappnMatt",
+         "uid": "9454623"
+      },
+      {
+         "name": "Morgen",
+         "username": "MMantlo",
+         "uid": "9375460"
+      },
+      {
+         "name": "Natasha",
+         "username": "rallynukab",
+         "uid": "9434617"
+      },
+      {
+         "name": "Nick",
+         "username": "jedimasterflint",
+         "uid": "9218955"
+      },
+      {
+         "name": "Rikki",
+         "username": "Chilly Chinchillas",
+         "uid": "10082653"
+      },
+      {
+         "name": "Rob",
+         "username": "RouteRob",
+         "uid": "10085022"
+      },
+      {
+         "name": "Robin",
+         "username": "RobinNoodles",
+         "uid": "9050649"
+      },
+      {
+         "name": "Ronmel",
+         "username": "Mel_1",
+         "uid": "9395604"
+      },
+      {
+         "name": "Sarah",
+         "username": "Yagni",
+         "uid": "10155906"
+      },
+      {
+         "name": "Savana",
+         "username": "staysavy",
+         "uid": "10051690"
+      },
+      {
+         "name": "Sharon",
+         "username": "mapcraft",
+         "uid": "9153797"
+      },
+      {
+         "name": "Steve",
+         "username": "Smoothdog",
+         "uid": "9476906"
+      },
+      {
+         "name": "William",
+         "username": "ImjusBuddy",
+         "uid": "9476874"
+      }
+   ]
+}
