@@ -2,11 +2,6 @@
    "USERS": [
             {
          "comment": "GIS Tech",
-         "name": "Alex",
-         "username": "Soccersweeper",
-         "uid": "9498478"
-      },      {
-         "comment": "GIS Tech",
          "name": "Arlene",
          "username": "ArleneC",
          "uid": "9355928"
@@ -125,6 +120,6 @@
          "name": "William",
          "username": "ImjusBuddy",
          "uid": "9476874"
-      }
+      },
           ]
 }
