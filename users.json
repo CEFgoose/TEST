@@ -2,11 +2,6 @@
    "USERS": [
             {
          "comment": "GIS Tech",
-         "name": "Breia",
-         "username": "3agleOne",
-         "uid": "9550075"
-      },      {
-         "comment": "GIS Tech",
          "name": "Brian",
          "username": "Unicorn Ostrich",
          "uid": "9319448"
@@ -15,11 +10,6 @@
          "name": "Chris",
          "username": "Goose6thAB",
          "uid": "10082622"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Ethan",
-         "username": "Ethan",
-         "uid": "10139455"
       },      {
          "comment": "GIS Tech",
          "name": "Ian",
