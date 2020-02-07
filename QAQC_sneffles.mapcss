@@ -1,0 +1,544 @@
+meta {
+  title: "QC Style For sneffles Team";
+  description: "Highlights features that were created/modified by users";
+  watch-modified: true;
+  version: "1.5";
+  icon: "http://uncrate.com/p/2016/02/smart-kart.jpg";
+
+}
+/* Notes
+
+1.0 Added styles -- provided by Jenn -- and users -- Ian -- 3/11/2019
+
+1.1 Configured styles -- Louis -- 3/13/2019
+
+1.2 Configured style colors and highlighting -- Ian -- 3/15/2019
+
+1.3 Simplified user lines -- Louis -- 3/18/2019
+
+1.4 Adjusted user, style lines and appearances -- 3/20/2019
+
+1.5 Alphabetized users, added new users, added tips, simplified node highlight & node modified overlays -- Louis,Ian,AndrewP -- 5/15/2019
+
+Tips:
+
+A setting should be created for each separate user:
+
+setting::user_aaron {
+  type: boolean;
+  label: tr("Turn User Aaron On/Off");
+  default: false;
+}
+
+-- after :: comes your setting "class" which can be named as you will. Our example show user_aaron
+-- Type: boolean; should always exist
+-- label: tr("Anything you want to put here") -> This is what shows up under setting in JOSM
+-- Default: false -> the setting will remain disabled on launch until a user enables it
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+at which point, it becomes necessary to create a selector statement for your user:
+
+*[eval(JOSM_search("user:vespax"))][setting("user_aaron")] {
+  set .aaron;
+}
+
+-- * denotes what you are selecting, in this case, every element type in OSM
+-- [eval(JOSM_search("user:vespax"))] -> this is necessary and should be constructed as such.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In order to construct time stamps, you can use the following:
+
+
+String: "[eval(JOSM_search("timestamp:2016-02-20/"))]" can be modified in several ways
+"timestamp:2016-02-20/" -- Shows all edits edited after date
+"timestamp:2016-02-20/2016-02-22" -- Shows all edits after 02-20 but before 02-22
+"timestamp:2016-02/ Day and Month can be removed to widen the range of edits shown, example here shows all edits starting in FEB2016.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+So, a timestamped search would look like this:
+
+*[eval(JOSM_search("user:IndianaJones737"))][eval(JOSM_search("timestamp:2016-03-14/2016-03-15"))] {
+  casing-width: 10;
+  casing-color: green;
+  casing-opacity: 0.2;
+}
+
+-- set .aaron; -> this is setting the class for this statement. This allows us to call it out later on. Classes
+can be set like that or as so -> set aaron;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+way.aaron, & node.aaron,
+
+-- This shows that we are looking for all ways/nodes which meet the "aaron" class. The comma here denotes
+that there is another selector we would like to call out after "aaron"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+{
+  z-index: -10;
+  casing-color: lime;
+  casing-width: 10;
+  casing-opacity: 0.3;
+ 
+ 
+}
+
+-- This is our code block which will style up whatever we called out as a selector
+
+*/
+
+/* Create Settings */
+
+
+/* User Settings */
+
+setting::user_Maureen {
+            type:boolean;
+            label:tr("Turn User VLD026 On/Off");
+            default:true;
+            }
+setting::user_Dylan {
+            type:boolean;
+            label:tr("Turn User VLD032 On/Off");
+            default:true;
+            }
+setting::user_Kady {
+            type:boolean;
+            label:tr("Turn User VLD035 On/Off");
+            default:true;
+            }
+setting::user_Olympia {
+            type:boolean;
+            label:tr("Turn User VLD036 On/Off");
+            default:true;
+            }
+setting::user_Gwen {
+            type:boolean;
+            label:tr("Turn User VLD082 On/Off");
+            default:true;
+            }
+setting::user_Steve {
+            type:boolean;
+            label:tr("Turn User VLD089 On/Off");
+            default:true;
+            }
+setting::user_Tukui {
+            type:boolean;
+            label:tr("Turn User VLD090 On/Off");
+            default:true;
+            }
+setting::user_Kayla {
+            type:boolean;
+            label:tr("Turn User VLD096 On/Off");
+            default:true;
+            }
+setting::user_Drew {
+            type:boolean;
+            label:tr("Turn User VLD098 On/Off");
+            default:true;
+            }
+setting::user_Jami {
+            type:boolean;
+            label:tr("Turn User VLD151 On/Off");
+            default:true;
+            }
+setting::user_Brenna {
+            type:boolean;
+            label:tr("Turn User VLD152 On/Off");
+            default:true;
+            }
+setting::user_Johnny {
+            type:boolean;
+            label:tr("Turn User VLD153 On/Off");
+            default:true;
+            }
+setting::user_Ethan {
+            type:boolean;
+            label:tr("Turn User VLD155 On/Off");
+            default:true;
+            }
+setting::user_Sherry {
+            type:boolean;
+            label:tr("Turn User VLD156 On/Off");
+            default:true;
+            }
+setting::user_Callista {
+            type:boolean;
+            label:tr("Turn User VLD157 On/Off");
+            default:true;
+            }
+setting::user_Goose {
+            type:boolean;
+            label:tr("Turn User VLD154 On/Off");
+            default:true;
+            }
+
+
+
+
+
+/* Tracking Selectors -- Way and node style BEFORE they are uploaded */
+
+node:modified::modified_layer {
+    symbol-shape: Heptagon;
+    symbol-size: 10;
+    symbol-stroke-color: #ff0000;
+    symbol-stroke-width: 3px;
+    symbol-fill-opacity: 0.5;
+    z-index: -5;
+}
+
+way:modified::modified_layer,
+node:modified < way::modified_layer {
+    width: 6;
+    color: transparent;
+    opacity: 0;
+    casing-width: 2;
+    casing-color: #0f00ff;
+    casing-opacity: 0.7;
+    z-index: -5;
+}
+
+/* QC Styles */
+
+
+/* User specific styles */
+
+*[eval(JOSM_search("user:VLD026"))][setting("user_Maureen")] {
+  set .Maureen
+}
+*[eval(JOSM_search("user:VLD032"))][setting("user_Dylan")] {
+  set .Dylan
+}
+*[eval(JOSM_search("user:VLD035"))][setting("user_Kady")] {
+  set .Kady
+}
+*[eval(JOSM_search("user:VLD036"))][setting("user_Olympia")] {
+  set .Olympia
+}
+*[eval(JOSM_search("user:VLD082"))][setting("user_Gwen")] {
+  set .Gwen
+}
+*[eval(JOSM_search("user:VLD089"))][setting("user_Steve")] {
+  set .Steve
+}
+*[eval(JOSM_search("user:VLD090"))][setting("user_Tukui")] {
+  set .Tukui
+}
+*[eval(JOSM_search("user:VLD096"))][setting("user_Kayla")] {
+  set .Kayla
+}
+*[eval(JOSM_search("user:VLD098"))][setting("user_Drew")] {
+  set .Drew
+}
+*[eval(JOSM_search("user:VLD151"))][setting("user_Jami")] {
+  set .Jami
+}
+*[eval(JOSM_search("user:VLD152"))][setting("user_Brenna")] {
+  set .Brenna
+}
+*[eval(JOSM_search("user:VLD153"))][setting("user_Johnny")] {
+  set .Johnny
+}
+*[eval(JOSM_search("user:VLD155"))][setting("user_Ethan")] {
+  set .Ethan
+}
+*[eval(JOSM_search("user:VLD156"))][setting("user_Sherry")] {
+  set .Sherry
+}
+*[eval(JOSM_search("user:VLD157"))][setting("user_Callista")] {
+  set .Callista
+}
+*[eval(JOSM_search("user:VLD154"))][setting("user_Goose")] {
+  set .Goose
+}
+
+
+
+/* This is how you search for someone with a space in their name
+
+*[eval(JOSM_search("user:"Hector Vector""))] {
+  set .jman;
+}
+
+*/
+
+/* Styling of ways and nodes once they belong to "history" for each individual user */
+
+
+way.Maureen{
+  z-index: -10;
+  casing-color: #c9ff7a;
+  casing-width: 2;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Dylan{
+  z-index: -10;
+  casing-color: #ffb000;
+  casing-width: 8;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Kady{
+  z-index: -10;
+  casing-color: #ff0000;
+  casing-width: 8;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Olympia{
+  z-index: -10;
+  casing-color: #fcff9a;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Gwen{
+  z-index: -10;
+  casing-color: #9ee8ff;
+  casing-width: 2;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Steve{
+  z-index: -10;
+  casing-color: #ff0055;
+  casing-width: 3;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Tukui{
+  z-index: -10;
+  casing-color: #6dff00;
+  casing-width: 8;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Kayla{
+  z-index: -10;
+  casing-color: #416f20;
+  casing-width: 8;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Drew{
+  z-index: -10;
+  casing-color: #B108D6;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Jami{
+  z-index: -10;
+  casing-color: #ff8000;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Brenna{
+  z-index: -10;
+  casing-color: #0071ff;
+  casing-width: 3;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Johnny{
+  z-index: -10;
+  casing-color: #bfffe8;
+  casing-width: 3;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Ethan{
+  z-index: -10;
+  casing-color: #79b4b2;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Sherry{
+  z-index: -10;
+  casing-color: #ffac95;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Callista{
+  z-index: -10;
+  casing-color: #00ac2a;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Goose{
+  z-index: -10;
+  casing-color: #c20018;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}
+/*NODESTYLE*/
+
+node.Maureen{
+  symbol-size: 25;
+  symbol-shape: Circle;
+  symbol-stroke-color: #ca9cff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Dylan{
+  symbol-size: 25;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #caceff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Kady{
+  symbol-size: 25;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #ffe5f3;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Olympia{
+  symbol-size: 20;
+  symbol-shape: Hexagon;
+  symbol-stroke-color: #00ff5a;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Gwen{
+  symbol-size: 25;
+  symbol-shape: Pentagon;
+  symbol-stroke-color: #ff946d;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Steve{
+  symbol-size: 20;
+  symbol-shape: Octagon;
+  symbol-stroke-color: #00feff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Tukui{
+  symbol-size: 25;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #ff737c;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Kayla{
+  symbol-size: 25;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #7cd39b;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Drew{
+  symbol-size: 10;
+  symbol-shape: Heptagon;
+  symbol-stroke-color: #0055ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Jami{
+  symbol-size: 20;
+  symbol-shape: Hexagon;
+  symbol-stroke-color: #fcff00;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Brenna{
+  symbol-size: 20;
+  symbol-shape: Pentagon;
+  symbol-stroke-color: #7e58ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Johnny{
+  symbol-size: 20;
+  symbol-shape: Pentagon;
+  symbol-stroke-color: #db7054;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Ethan{
+  symbol-size: 10;
+  symbol-shape: Decagon;
+  symbol-stroke-color: #4f9d83;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Sherry{
+  symbol-size: 10;
+  symbol-shape: Hexagon;
+  symbol-stroke-color: #ff003d;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Callista{
+  symbol-size: 10;
+  symbol-shape: Circle;
+  symbol-stroke-color: #0091aa;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Goose{
+  symbol-size: 10;
+  symbol-shape: Square;
+  symbol-stroke-color: #ffd300;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}
+
+
+node:selected::selected_layer {
+    symbol-shape: circle;
+    symbol-size: 22;
+    symbol-stroke-color: #DF2E08;
+    symbol-stroke-width: 3px;
+    symbol-fill-opacity: 0.5;
+    z-index: -5;
+}
