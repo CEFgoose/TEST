@@ -1,0 +1,808 @@
+meta {
+  title: "QC Style For Quandry Team";
+  description: "Highlights features that were created/modified by users";
+  watch-modified: true;
+  version: "1.5";
+  icon: "http://uncrate.com/p/2016/02/smart-kart.jpg";
+
+}
+/* Notes
+
+1.0 Added styles -- provided by Jenn -- and users -- Ian -- 3/11/2019
+
+1.1 Configured styles -- Louis -- 3/13/2019
+
+1.2 Configured style colors and highlighting -- Ian -- 3/15/2019
+
+1.3 Simplified user lines -- Louis -- 3/18/2019
+
+1.4 Adjusted user, style lines and appearances -- 3/20/2019
+
+1.5 Alphabetized users, added new users, added tips, simplified node highlight & node modified overlays -- Louis,Ian,AndrewP -- 5/15/2019
+
+Tips:
+
+A setting should be created for each separate user:
+
+setting::user_aaron {
+  type: boolean;
+  label: tr("Turn User Aaron On/Off");
+  default: false;
+}
+
+-- after :: comes your setting "class" which can be named as you will. Our example show user_aaron
+-- Type: boolean; should always exist
+-- label: tr("Anything you want to put here") -> This is what shows up under setting in JOSM
+-- Default: false -> the setting will remain disabled on launch until a user enables it
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+at which point, it becomes necessary to create a selector statement for your user:
+
+*[eval(JOSM_search("user:vespax"))][setting("user_aaron")] {
+  set .aaron;
+}
+
+-- * denotes what you are selecting, in this case, every element type in OSM
+-- [eval(JOSM_search("user:vespax"))] -> this is necessary and should be constructed as such.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In order to construct time stamps, you can use the following:
+
+
+String: "[eval(JOSM_search("timestamp:2016-02-20/"))]" can be modified in several ways
+"timestamp:2016-02-20/" -- Shows all edits edited after date
+"timestamp:2016-02-20/2016-02-22" -- Shows all edits after 02-20 but before 02-22
+"timestamp:2016-02/ Day and Month can be removed to widen the range of edits shown, example here shows all edits starting in FEB2016.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+So, a timestamped search would look like this:
+
+*[eval(JOSM_search("user:IndianaJones737"))][eval(JOSM_search("timestamp:2016-03-14/2016-03-15"))] {
+  casing-width: 10;
+  casing-color: green;
+  casing-opacity: 0.2;
+}
+
+-- set .aaron; -> this is setting the class for this statement. This allows us to call it out later on. Classes
+can be set like that or as so -> set aaron;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+way.aaron, & node.aaron,
+
+-- This shows that we are looking for all ways/nodes which meet the "aaron" class. The comma here denotes
+that there is another selector we would like to call out after "aaron"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+{
+  z-index: -10;
+  casing-color: lime;
+  casing-width: 10;
+  casing-opacity: 0.3;
+ 
+ 
+}
+
+-- This is our code block which will style up whatever we called out as a selector
+
+*/
+
+/* Create Settings */
+
+
+/* User Settings */
+
+setting::user_Gary {
+            type:boolean;
+            label:tr("Turn User Gary On/Off");
+            default:true;
+            }
+setting::user_IanM {
+            type:boolean;
+            label:tr("Turn User IanM On/Off");
+            default:true;
+            }
+setting::user_JacobK {
+            type:boolean;
+            label:tr("Turn User JacobK On/Off");
+            default:true;
+            }
+setting::user_JasonH {
+            type:boolean;
+            label:tr("Turn User JasonH On/Off");
+            default:true;
+            }
+setting::user_Jonathon {
+            type:boolean;
+            label:tr("Turn User Jonathon On/Off");
+            default:true;
+            }
+setting::user_Jorge {
+            type:boolean;
+            label:tr("Turn User Jorge On/Off");
+            default:true;
+            }
+setting::user_Kira {
+            type:boolean;
+            label:tr("Turn User Kira On/Off");
+            default:true;
+            }
+setting::user_Lucas {
+            type:boolean;
+            label:tr("Turn User Lucas On/Off");
+            default:true;
+            }
+setting::user_Michelle {
+            type:boolean;
+            label:tr("Turn User Michelle On/Off");
+            default:true;
+            }
+setting::user_Aaron {
+            type:boolean;
+            label:tr("Turn User Aaron On/Off");
+            default:true;
+            }
+setting::user_Brent {
+            type:boolean;
+            label:tr("Turn User Brent On/Off");
+            default:true;
+            }
+setting::user_Corban {
+            type:boolean;
+            label:tr("Turn User Corban On/Off");
+            default:true;
+            }
+setting::user_Danielle {
+            type:boolean;
+            label:tr("Turn User Danielle On/Off");
+            default:true;
+            }
+setting::user_Reed {
+            type:boolean;
+            label:tr("Turn User Reed On/Off");
+            default:true;
+            }
+setting::user_Rich {
+            type:boolean;
+            label:tr("Turn User Rich On/Off");
+            default:true;
+            }
+setting::user_RyanK {
+            type:boolean;
+            label:tr("Turn User RyanK On/Off");
+            default:true;
+            }
+setting::user_RyanR {
+            type:boolean;
+            label:tr("Turn User RyanR On/Off");
+            default:true;
+            }
+setting::user_Sara {
+            type:boolean;
+            label:tr("Turn User Sara On/Off");
+            default:true;
+            }
+setting::user_Sarah {
+            type:boolean;
+            label:tr("Turn User Sarah On/Off");
+            default:true;
+            }
+setting::user_Timothy {
+            type:boolean;
+            label:tr("Turn User Timothy On/Off");
+            default:true;
+            }
+setting::user_Tom {
+            type:boolean;
+            label:tr("Turn User Tom On/Off");
+            default:true;
+            }
+setting::user_Derek {
+            type:boolean;
+            label:tr("Turn User Derek On/Off");
+            default:true;
+            }
+setting::user_Nathan {
+            type:boolean;
+            label:tr("Turn User Nathan On/Off");
+            default:true;
+            }
+setting::user_Nutchaya {
+            type:boolean;
+            label:tr("Turn User Nutchaya On/Off");
+            default:true;
+            }
+setting::user_Pace {
+            type:boolean;
+            label:tr("Turn User Pace On/Off");
+            default:true;
+            }
+setting::user_Spencer {
+            type:boolean;
+            label:tr("Turn User Spencer On/Off");
+            default:true;
+            }
+setting::user_Sumittra {
+            type:boolean;
+            label:tr("Turn User Sumittra On/Off");
+            default:true;
+            }
+
+
+
+
+
+/* Tracking Selectors -- Way and node style BEFORE they are uploaded */
+
+node:modified::modified_layer {
+    symbol-shape: Circle;
+    symbol-size: 10;
+    symbol-stroke-color: #ff0000;
+    symbol-stroke-width: 3px;
+    symbol-fill-opacity: 0.5;
+    z-index: -5;
+}
+
+way:modified::modified_layer,
+node:modified < way::modified_layer {
+    width: 6;
+    color: transparent;
+    opacity: 0;
+    casing-width: 1;
+    casing-color: #0f00ff;
+    casing-opacity: 0.7;
+    z-index: -5;
+}
+
+/* QC Styles */
+
+
+/* User specific styles */
+
+*[eval(JOSM_search("user:Velocimaptor"))][setting("user_Gary")] {
+  set .Gary
+}
+*[eval(JOSM_search("user:Baconcrisp"))][setting("user_IanM")] {
+  set .IanM
+}
+*[eval(JOSM_search("user:CoolGuyJake"))][setting("user_JacobK")] {
+  set .JacobK
+}
+*[eval(JOSM_search("user:AnonJason"))][setting("user_JasonH")] {
+  set .JasonH
+}
+*[eval(JOSM_search("user:spuddy93"))][setting("user_Jonathon")] {
+  set .Jonathon
+}
+*[eval(JOSM_search("user:JAAS"))][setting("user_Jorge")] {
+  set .Jorge
+}
+*[eval(JOSM_search("user:birdeatscake"))][setting("user_Kira")] {
+  set .Kira
+}
+*[eval(JOSM_search("user:Traaker_L"))][setting("user_Lucas")] {
+  set .Lucas
+}
+*[eval(JOSM_search("user:MichNicole"))][setting("user_Michelle")] {
+  set .Michelle
+}
+*[eval(JOSM_search("user:vespax"))][setting("user_Aaron")] {
+  set .Aaron
+}
+*[eval(JOSM_search("user:SmoothWookieFlow"))][setting("user_Brent")] {
+  set .Brent
+}
+*[eval(JOSM_search("user:Corban8"))][setting("user_Corban")] {
+  set .Corban
+}
+*[eval(JOSM_search("user:GhostEye"))][setting("user_Danielle")] {
+  set .Danielle
+}
+*[eval(JOSM_search("user:ReedtheRiver"))][setting("user_Reed")] {
+  set .Reed
+}
+*[eval(JOSM_search("user:RConnorsCarte19"))][setting("user_Rich")] {
+  set .Rich
+}
+*[eval(JOSM_search("user:\"Whimsical Otter\""))][setting("user_RyanK")] {
+  set .RyanK;
+}
+*[eval(JOSM_search("user:Kaarti_B"))][setting("user_RyanR")] {
+  set .RyanR
+}
+*[eval(JOSM_search("user:sbburg"))][setting("user_Sara")] {
+  set .Sara
+}
+*[eval(JOSM_search("user:saradenise"))][setting("user_Sarah")] {
+  set .Sarah
+}
+*[eval(JOSM_search("user:timi_hendrix"))][setting("user_Timothy")] {
+  set .Timothy
+}
+*[eval(JOSM_search("user:tomincolorado"))][setting("user_Tom")] {
+  set .Tom
+}
+*[eval(JOSM_search("user:DerekBev"))][setting("user_Derek")] {
+  set .Derek
+}
+*[eval(JOSM_search("user:Nathan_Rose"))][setting("user_Nathan")] {
+  set .Nathan
+}
+*[eval(JOSM_search("user:nutchayahonvilai"))][setting("user_Nutchaya")] {
+  set .Nutchaya
+}
+*[eval(JOSM_search("user:InnerPace"))][setting("user_Pace")] {
+  set .Pace
+}
+*[eval(JOSM_search("user:Spence142"))][setting("user_Spencer")] {
+  set .Spencer
+}
+*[eval(JOSM_search("user:Solra"))][setting("user_Sumittra")] {
+  set .Sumittra
+}
+
+
+
+/* This is how you search for someone with a space in their name
+
+*[eval(JOSM_search("user:"Hector Vector""))] {
+  set .jman;
+}
+
+*/
+
+/* Styling of ways and nodes once they belong to "history" for each individual user */
+
+
+way.Gary{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.IanM{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.JacobK{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.JasonH{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Jonathon{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Jorge{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Kira{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Lucas{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Michelle{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Aaron{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Brent{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Corban{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Danielle{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Reed{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Rich{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.RyanK{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.RyanR{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Sara{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Sarah{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Timothy{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Tom{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Derek{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Nathan{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Nutchaya{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Pace{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Spencer{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}way.Sumittra{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
+}
+/*NODESTYLE*/
+
+node.Gary{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.IanM{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.JacobK{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.JasonH{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Jonathon{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Jorge{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Kira{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Lucas{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Michelle{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Aaron{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Brent{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Corban{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Danielle{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Reed{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Rich{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.RyanK{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.RyanR{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Sara{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Sarah{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Timothy{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Tom{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Derek{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Nathan{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Nutchaya{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Pace{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Spencer{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.Sumittra{
+  symbol-size: 10;
+  symbol-shape: Triangle;
+  symbol-stroke-color: #4648ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}
+
+
+node:selected::selected_layer {
+    symbol-shape: circle;
+    symbol-size: 22;
+    symbol-stroke-color: #DF2E08;
+    symbol-stroke-width: 3px;
+    symbol-fill-opacity: 0.5;
+    z-index: -5;
+}
