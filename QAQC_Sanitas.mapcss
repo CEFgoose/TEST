@@ -238,6 +238,11 @@ setting::user_BrianL {
             label:tr("Turn User Unicorn Ostrich On/Off");
             default:true;
             }
+setting::user_TEST {
+            type:boolean;
+            label:tr("Turn User TEST On/Off");
+            default:true;
+            }
 
 
 
@@ -353,6 +358,9 @@ node:modified < way::modified_layer {
 }
 *[eval(JOSM_search("user:\"Unicorn Ostrich\""))][setting("user_BrianL")] {
   set .BrianL;
+}
+*[eval(JOSM_search("user:TEST"))][setting("user_TEST")] {
+  set .TEST
 }
 
 
@@ -620,6 +628,15 @@ way.AlexD{
   text: eval(concat("Highway type =", " ", tag("highway")));
   text-offset: -20;
   */
+}way.TEST{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
 }
 /*NODESTYLE*/
 
@@ -816,6 +833,13 @@ node.AlexD{
   symbol-size: 10;
   symbol-shape: Triangle;
   symbol-stroke-color: #0055ff;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.TEST{
+  symbol-size: 10;
+  symbol-shape: Circle;
+  symbol-stroke-color: #4648ff;
   symbol-stroke-width: 3px;
   symbol-fill-opacity: 0.5;
   z-index: -5;
