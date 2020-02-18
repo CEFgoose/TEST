@@ -183,6 +183,11 @@ setting::user_Joanna {
             label:tr("Turn User VLD150 On/Off");
             default:true;
             }
+setting::user_TESTER {
+            type:boolean;
+            label:tr("Turn User TEST On/Off");
+            default:true;
+            }
 
 
 
@@ -204,7 +209,7 @@ node:modified < way::modified_layer {
     width: 6;
     color: transparent;
     opacity: 0;
-    casing-width: 2;
+    casing-width: 1;
     casing-color: #0f00ff;
     casing-opacity: 0.7;
     z-index: -5;
@@ -265,6 +270,9 @@ node:modified < way::modified_layer {
 }
 *[eval(JOSM_search("user:VLD150"))][setting("user_Joanna")] {
   set .Joanna
+}
+*[eval(JOSM_search("user:TEST"))][setting("user_TESTER")] {
+  set .TESTER
 }
 
 
@@ -433,6 +441,15 @@ way.Maureen{
   text: eval(concat("Highway type =", " ", tag("highway")));
   text-offset: -20;
   */
+}way.TESTER{
+  z-index: -10;
+  casing-color: #b600ff;
+  casing-width: 5;
+  casing-opacity: 0.6;
+  /*
+  text: eval(concat("Highway type =", " ", tag("highway")));
+  text-offset: -20;
+  */
 }
 /*NODESTYLE*/
 
@@ -552,6 +569,13 @@ node.Maureen{
   symbol-size: 10;
   symbol-shape: Pentagon;
   symbol-stroke-color: #ff0087;
+  symbol-stroke-width: 3px;
+  symbol-fill-opacity: 0.5;
+  z-index: -5;
+}node.TESTER{
+  symbol-size: 10;
+  symbol-shape: Circle;
+  symbol-stroke-color: #4648ff;
   symbol-stroke-width: 3px;
   symbol-fill-opacity: 0.5;
   z-index: -5;
