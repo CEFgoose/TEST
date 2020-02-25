@@ -1,257 +1,257 @@
 {
    "USERS": [
             {
-         "title": "GIS Tech",
-         "name": "Ian",
+         "comment": "GIS TechII",
+         "name": "TEST",
          "username": "Ikohl",
-         "uid": "10140113",
-         "gitaccess": "False"
+         "gitaccess":"True",
+         "uid": "10140113"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Jacinda",
          "username": "Cinderblock",
-         "uid": "9564205",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9564205"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Johnny",
          "username": "spititout",
-         "uid": "10140140",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10140140"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Logan",
          "username": "Dalekokarta",
-         "uid": "9633078",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9633078"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Louis",
          "username": "BlueRanger",
-         "uid": "9467992",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9467992"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Marshall",
          "username": "MTG5093",
-         "uid": "9220580",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9220580"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Matthew",
          "username": "MappnMatt",
-         "uid": "9454623",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9454623"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Morgen",
          "username": "MMantlo",
-         "uid": "9375460",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9375460"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Natasha",
          "username": "rallynukab",
-         "uid": "9434617",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9434617"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Nick",
          "username": "jedimasterflint",
-         "uid": "9218955",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9218955"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Rikki",
          "username": "Chilly Chinchillas",
-         "uid": "10082653",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10082653"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Rob",
          "username": "RouteRob",
-         "uid": "10085022",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10085022"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Robin",
          "username": "RobinNoodles",
-         "uid": "9050649",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9050649"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Ronmel",
          "username": "Mel_1",
-         "uid": "9395604",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9395604"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Sarah",
          "username": "Yagni",
-         "uid": "10155906",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10155906"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Savana",
          "username": "staysavy",
-         "uid": "10051690",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10051690"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Sharon",
          "username": "mapcraft",
-         "uid": "9153797",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9153797"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Steve",
          "username": "Smoothdog",
-         "uid": "9476906",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9476906"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "William",
          "username": "ImjusBuddy",
-         "uid": "9476874",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9476874"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Brian",
          "username": "Unicorn Ostrich",
-         "uid": "9319448",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9319448"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Chris",
          "username": "Goose6thAB",
-         "uid": "10082622",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10082622"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Ian",
          "username": "Ikohl",
-         "uid": "10140113",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10140113"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Jacinda",
          "username": "Cinderblock",
-         "uid": "9564205",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9564205"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Johnny",
          "username": "spititout",
-         "uid": "10140140",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10140140"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Logan",
          "username": "Dalekokarta",
-         "uid": "9633078",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9633078"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Louis",
          "username": "BlueRanger",
-         "uid": "9467992",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9467992"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Marshall",
          "username": "MTG5093",
-         "uid": "9220580",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9220580"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Matthew",
          "username": "MappnMatt",
-         "uid": "9454623",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9454623"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Morgen",
          "username": "MMantlo",
-         "uid": "9375460",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9375460"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Natasha",
          "username": "rallynukab",
-         "uid": "9434617",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9434617"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Nick",
          "username": "jedimasterflint",
-         "uid": "9218955",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9218955"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Rikki",
          "username": "Chilly Chinchillas",
-         "uid": "10082653",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10082653"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Rob",
          "username": "RouteRob",
-         "uid": "10085022",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10085022"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Robin",
          "username": "RobinNoodles",
-         "uid": "9050649",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9050649"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Ronmel",
          "username": "Mel_1",
-         "uid": "9395604",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9395604"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Sarah",
          "username": "Yagni",
-         "uid": "10155906",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10155906"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Savana",
          "username": "staysavy",
-         "uid": "10051690",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "10051690"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Sharon",
          "username": "mapcraft",
-         "uid": "9153797",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9153797"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "Steve",
          "username": "Smoothdog",
-         "uid": "9476906",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9476906"
       },      {
-         "title": "GIS Tech",
+         "comment": "GIS Tech",
          "name": "William",
          "username": "ImjusBuddy",
-         "uid": "9476874",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "9476874"
       },      {
-         "title": "APPWIZZARD",
+         "comment": "APPWIZZARD",
          "name": "Chris",
          "username": "GOOSE",
-         "uid": "345345345",
-         "gitaccess": "False"
+         "gitaccess":"False",
+         "uid": "345345345"
       },      {
-         "title": "Team Lead",
+         "comment": "Team Lead",
          "name": "Leanne",
          "username": "BOSS",
-         "uid": "58647647",
-         "gitaccess": "False"
-      }
+         "gitaccess":"False",
+         "uid": "58647647"
+      },
           ]
 }
