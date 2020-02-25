@@ -1,10 +1,94 @@
 {
    "USERS": [
             {
-         "title": "Team Lead",
+         "comment": "Team Lead",
          "name": "Kady",
          "username": "VLD035",
          "gitaccess":"True",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 2",
+         "name": "Dylan",
+         "username": "VLD032",
+         "gitaccess":"True",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 2",
+         "name": "Kayla",
+         "username": "VLD096",
+         "gitaccess":"True",
+         "uid": ""
+      },      {
+         "comment": "GIS Teach 2",
+         "name": "Olympia",
+         "username": "VLD036",
+         "gitaccess":"True",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 2",
+         "name": "Tukui",
+         "username": "VLD090",
+         "gitaccess":"True",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 1",
+         "name": "Gwen",
+         "username": "VLD082",
+         "gitaccess":"False",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 1",
+         "name": "Steve",
+         "username": "VLD089",
+         "gitaccess":"False",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 1",
+         "name": "Jami",
+         "username": "VLD151",
+         "gitaccess":"False",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 1",
+         "name": "Brenna",
+         "username": "VLD152",
+         "gitaccess":"False",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 1",
+         "name": "Johnny",
+         "username": "VLD153",
+         "gitaccess":"False",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 1",
+         "name": "Ethan",
+         "username": "VLD155",
+         "gitaccess":"False",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 1",
+         "name": "Sherry",
+         "username": "VLD156",
+         "gitaccess":"False",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 1",
+         "name": "Callista",
+         "username": "VLD157",
+         "gitaccess":"False",
+         "uid": ""
+      },      {
+         "comment": "GIS Tech 1",
+         "name": "Joanna",
+         "username": "VLD150",
+         "gitaccess":"False",
+         "uid": ""
+      },      {
+         "title": "GIS Tech 1",
+         "name": "Goose",
+         "username": "VLD154",
+         "gitaccess":"False",
          "uid": ""
       }
           ]
