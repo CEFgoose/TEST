@@ -1,215 +1,47 @@
 {
    "USERS": [
             {
-         "comment": "GIS Tech",
-         "name": "Ian",
-         "username": "Ikohl",
-         "uid": "10140113"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Jacinda",
-         "username": "Cinderblock",
-         "uid": "9564205"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Johnny",
-         "username": "spititout",
-         "uid": "10140140"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Logan",
-         "username": "Dalekokarta",
-         "uid": "9633078"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Louis",
-         "username": "BlueRanger",
-         "uid": "9467992"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Marshall",
-         "username": "MTG5093",
-         "uid": "9220580"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Matthew",
-         "username": "MappnMatt",
-         "uid": "9454623"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Morgen",
-         "username": "MMantlo",
-         "uid": "9375460"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Natasha",
-         "username": "rallynukab",
-         "uid": "9434617"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Nick",
-         "username": "jedimasterflint",
-         "uid": "9218955"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Rikki",
-         "username": "Chilly Chinchillas",
-         "uid": "10082653"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Rob",
-         "username": "RouteRob",
-         "uid": "10085022"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Robin",
-         "username": "RobinNoodles",
-         "uid": "9050649"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Ronmel",
-         "username": "Mel_1",
-         "uid": "9395604"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Sarah",
-         "username": "Yagni",
-         "uid": "10155906"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Savana",
-         "username": "staysavy",
-         "uid": "10051690"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Sharon",
-         "username": "mapcraft",
-         "uid": "9153797"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Steve",
-         "username": "Smoothdog",
-         "uid": "9476906"
-      },      {
-         "comment": "GIS Tech",
-         "name": "William",
-         "username": "ImjusBuddy",
-         "uid": "9476874"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Brian",
-         "username": "Unicorn Ostrich",
-         "uid": "9319448"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Chris",
-         "username": "Goose6thAB",
-         "uid": "10082622"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Ian",
-         "username": "Ikohl",
-         "uid": "10140113"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Jacinda",
-         "username": "Cinderblock",
-         "uid": "9564205"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Johnny",
-         "username": "spititout",
-         "uid": "10140140"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Logan",
-         "username": "Dalekokarta",
-         "uid": "9633078"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Louis",
-         "username": "BlueRanger",
-         "uid": "9467992"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Marshall",
-         "username": "MTG5093",
-         "uid": "9220580"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Matthew",
-         "username": "MappnMatt",
-         "uid": "9454623"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Morgen",
-         "username": "MMantlo",
-         "uid": "9375460"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Natasha",
-         "username": "rallynukab",
-         "uid": "9434617"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Nick",
-         "username": "jedimasterflint",
-         "uid": "9218955"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Rikki",
-         "username": "Chilly Chinchillas",
-         "uid": "10082653"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Rob",
-         "username": "RouteRob",
-         "uid": "10085022"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Robin",
-         "username": "RobinNoodles",
-         "uid": "9050649"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Ronmel",
-         "username": "Mel_1",
-         "uid": "9395604"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Sarah",
-         "username": "Yagni",
-         "uid": "10155906"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Savana",
-         "username": "staysavy",
-         "uid": "10051690"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Sharon",
-         "username": "mapcraft",
-         "uid": "9153797"
-      },      {
-         "comment": "GIS Tech",
-         "name": "Steve",
-         "username": "Smoothdog",
-         "uid": "9476906"
-      },      {
-         "comment": "GIS Tech",
-         "name": "William",
-         "username": "ImjusBuddy",
-         "uid": "9476874"
-      },      {
-         "comment": "APPWIZZARD",
-         "name": "Chris",
-         "username": "GOOSE",
-         "uid": "345345345"
-      },      {
          "comment": "Team Lead",
          "name": "Leanne",
-         "username": "BOSS",
+         "username": "",
+         "gitaccess":"False",
          "uid": "58647647"
+      },      {
+         "comment": "GIS Tech 2",
+         "name": "Louis",
+         "username": "BlueRanger",
+         "gitaccess":"False",
+         "uid": "9467992"
+      },      {
+         "comment": "GIS Tech 2",
+         "name": "Morgen",
+         "username": "MMantlo",
+         "gitaccess":"False",
+         "uid": "9375460"
+      },      {
+         "comment": "GIS Tech 2",
+         "name": "Buddy",
+         "username": "ImjusBuddy",
+         "gitaccess":"False",
+         "uid": "9476874"
+      },      {
+         "comment": "GIS Tech 2",
+         "name": "Robin",
+         "username": "RobinNoodles",
+         "gitaccess":"False",
+         "uid": "9050649"
+      },      {
+         "comment": "GIS Tech 2",
+         "name": "Tasha",
+         "username": "rallynukab",
+         "gitaccess":"False",
+         "uid": "9434617"
+      },      {
+         "title": "GIS Tech 1",
+         "name": "Jacinda",
+         "username": "Cinderblock",
+         "gitaccess":"False",
+         "uid": "9564205"
       }
           ]
 }
